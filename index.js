@@ -10,7 +10,7 @@ const vm = require('vm');
 const babelConfig = {
     presets: [
         ['@babel/preset-env', {
-            modules: false
+            // modules: false
         }]
     ]
 };
