@@ -1,6 +1,7 @@
 require('@babel/polyfill');
 
 const babel = require('@babel/core');
+const debug = require('debug')('babel7-repl');
 const os = require('os');
 const path = require('path');
 const repl = require('repl');
@@ -10,7 +11,7 @@ const vm = require('vm');
 const babelConfig = {
     presets: [
         ['@babel/preset-env', {
-            // modules: false
+            modules: false
         }]
     ]
 };
